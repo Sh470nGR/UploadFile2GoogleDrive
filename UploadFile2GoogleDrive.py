@@ -14,7 +14,7 @@ driver = webdriver.Chrome(PATH)
 # The location of the folder in goolge drive 
 driver.get("https://drive.google.com/drive/folders/xxxxxxxxxxxxxxxxxxxxxxx")
 
-list_of_files = glob.glob("folder location on the os")
+list_of_files = glob.glob("folder path location on the os")
 
 search = driver.find_element_by_name("identifier")
 search.send_keys("your email address")
