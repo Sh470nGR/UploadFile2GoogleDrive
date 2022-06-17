@@ -12,13 +12,15 @@ PATH = "path to the driver file" + "\\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 
 driver.get("driver folder URL path")
+password = ""
+email_addr = ""
 
 search = driver.find_element_by_name("identifier")
-search.send_keys("your email address")
+search.send_keys(email_addr)
 search.send_keys(Keys.RETURN)
 driver.implicitly_wait(4)
 search = driver.find_element_by_name("password")
-search.send_keys("your password")
+search.send_keys(password)
 time.sleep(3)
 search.send_keys(Keys.RETURN)
 time.sleep(5)
